@@ -1,0 +1,102 @@
+/* ProfileScreen.css */
+
+/* コンテナ全体のスタイル */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden; /* スクロールバーを非表示 */
+}
+
+/* 写真アップロードセクション */
+.photo-upload {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo-preview {
+  width: 120px;
+  height: 160px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.photo-preview p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* フォームセクション */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 各入力項目のスタイル */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+  width: 100%;
+  max-width: 400px; /* 最大幅を設定 */
+  height: 40px; /* 高さを固定 */
+  padding: 5px 10px;
+  border: 1px solid #ffcccc; /* 赤系のボーダー */
+  border-radius: 5px;
+  background-color: #ffe6e6; /* 赤系の背景色 */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* ファイルアップロードボタンのスタイル */
+.upload-button {
+  width: 100px;
+  height: 40px;
+  background-color: #ff4d4d; /* 赤色 */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.upload-button:hover {
+  background-color: #e60000;
+}
+
+/* レスポンシブ対応（画面が狭くなった場合に折り返す） */
+@media (max-width: 1280px) {
+  .profile-container {
+    padding: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="file"] {
+    max-width: 100%;
+  }
+}

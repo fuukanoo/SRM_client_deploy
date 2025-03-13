@@ -1,0 +1,94 @@
+.casual-screen {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 左、中、右の3列 */
+  gap: 20px;
+}
+
+/* 左側: 写真と名前、プロフィール情報 */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo {
+  width: 120px;
+  height: 160px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.furigana {
+  font-size: 14px;
+  color: #666;
+}
+
+.kanji-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 中央: 判定結果～謙虚さと責任感 */
+.center-section .evaluation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.evaluation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red-input {
+  width: 100px;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 右側: 備考記入欄 */
+.right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.red-textarea {
+  width: 100%;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  border-radius: 5px;
+  resize: none;
+}

@@ -1,0 +1,55 @@
+.step-navigator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow-x: auto; /* 横スクロールを有効化 */
+  white-space: nowrap; /* ボタンが折り返されないようにする */
+}
+
+
+.step-container {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.step-button {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  text-decoration: none; /* ボタンの下線を消す */
+}
+
+.step-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.step-button:hover:not(.active) {
+  background-color: #f1f1f1;
+}
+
+.add-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  /* margin-left: -150px; 追加ボタンを少し寄せる */
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
